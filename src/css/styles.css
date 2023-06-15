@@ -16,6 +16,7 @@ p {
   border: 3px solid rgba(0, 58, 96, 0.364);
   border-radius: 5px;
 }
+
 .cat-info {
   display: flex;
 }
@@ -31,10 +32,30 @@ p.error {
 }
 
 p.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted teal;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* p.loader {
   font-weight: 600;
   color: green;
   border: none;
-}
+} */
 
 img {
   max-width: 50%;
