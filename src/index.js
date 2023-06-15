@@ -6,7 +6,7 @@ const errorMessage = document.querySelector('p.error');
 const catInfoDiv = document.querySelector('.cat-info');
 
 breedSelect.style.display = 'none';
-loaderMessage.textContent = 'Loading data, please wait...';
+loaderMessage.textContent = '';
 
 function populateBreedSelect(breeds) {
   breeds.forEach(breed => {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedBreedId = breedSelect.value;
 
     loaderMessage.style.display = 'block';
-    loaderMessage.textContent = 'Loading data, please wait...';
+    loaderMessage.textContent = '';
     errorMessage.style.display = 'none';
     catInfoDiv.innerHTML = '';
 
