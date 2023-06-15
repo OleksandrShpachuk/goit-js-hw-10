@@ -1,0 +1,43 @@
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 20;
+}
+
+.breed-select {
+  width: 150px;
+  height: 50px;
+  font-size: 18;
+  border: 3px solid teal;
+  border-radius: 5px;
+}
+.cat-info {
+  display: flex;
+}
+
+.error,
+.loader {
+  display: none;
+}
+
+p.error {
+  font-weight: 600;
+  color: red;
+}
+
+p.loader {
+  font-weight: 600;
+  color: green;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 30px;
+}
+.text-info {
+  margin-left: 50px;
+  width: 400px;
+}
